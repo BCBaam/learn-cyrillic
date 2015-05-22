@@ -16,14 +16,25 @@
 }
 
 #answer_buttons button {
+    font-size: 20px;
 	white-space: normal;
-	min-width: 80px;
-	width: 8%;
-	height: 60px;
+	min-width: 100px;
+	width: 15%;
+	height: 80px;
 	margin: 4px;
 	padding-left: 6px;
 	padding-right: 6px;
 	font-weight: bold;
+}
+
+#answer_buttons .btn-default{
+    color: #2C3E50;
+    background-color: #F0F0F0;
+}
+
+#answer_buttons .btn-default:hover{
+    background-color: #2C3E50;
+    color: #F0F0F0;
 }
 
 .navbar .navbar-nav {
@@ -41,10 +52,24 @@
 	margin-right: 15px;
 }
 
-/*#show_score:hover{
-  opacity: 0;
-  
-  -webkit-transform: scale(2, 2);
-  -moz-transform: scale(2, 2);
-  transform: scale(2, 2);
-}*/
+#show_score, #show_mistakes {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.scale_object{
+    -webkit-transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+}
+
+.shrink_object {
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+}
+
+.nav > li {
+    float: left !important;
+}

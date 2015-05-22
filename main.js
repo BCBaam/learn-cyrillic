@@ -44,10 +44,14 @@ var button_pushed = function (id) {
     var wait = 1500;
     if (correct_answer_index == id) {
         correct_count++;
+        $('#show_score').addClass('scale_object');
+        setTimeout(function(){$('#show_score').removeClass('scale_object');}, 500);
         $('#'+id).attr('class', 'btn btn-success');
         wait = 300;
     } else{
         mistake_count++;
+        $('#show_mistakes').addClass('shrink_object');
+        setTimeout(function(){$('#show_mistakes').removeClass('shrink_object');}, 500);
         $('#'+id).attr('class', 'btn btn-danger');
         $('#'+correct_answer_index).attr('class', 'btn btn-success');
     }
