@@ -41,12 +41,10 @@
 	margin-right: 15px;
 }
 
-#show_score:hover{
-  /*color: #009999;
-  border: #009999;*/
+/*#show_score:hover{
   opacity: 0;
   
   -webkit-transform: scale(2, 2);
   -moz-transform: scale(2, 2);
   transform: scale(2, 2);
-}
+}*/
