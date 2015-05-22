@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Learn Cyrillic">
+	<title>Learn Cyrillic</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<!-- Bootstrap and bootswatch theme CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/paper/bootstrap.min.css">
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<script src="main.js"></script>
+
+	<nav class="navbar navbar-default" role="navigation">
+  		<div class="navbar-score">
+  			<ul class="nav navbar-nav">
+  				<li>
+  					<button id="show_score" type="button" class="btn btn-success navbar-btn no-style">
+  						<span id="correct_count"></span>
+  					</button>
+  				</li>
+  				<li>
+  					<button id="show_mistakes" type="button" class="btn btn-danger navbar-btn no-style">
+  						<span id="mistake_count"></span>
+  					</button>
+  				</li>
+  				<li>
+  					<button id="reset_score" type="button" class="btn btn-default navbar-btn"></button>
+  				</li>
+  			</ul>
+  		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="question"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="answer_buttons"></div>
+		</div>
+	</div>
+</body>
+</html>

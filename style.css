@@ -1,0 +1,52 @@
+/*body {
+	padding-top: 70px;
+}*/
+
+.container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#question {
+	font-size: 150px;
+	text-align: center;
+}
+
+#question p {
+	margin-bottom: 20px;
+}
+
+#answer_buttons button {
+	white-space: normal;
+	min-width: 80px;
+	width: 8%;
+	height: 60px;
+	margin: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-weight: bold;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-score {
+    text-align: center;
+}
+
+.no-style {
+	pointer-events: none;
+	box-shadow: none;
+	margin-right: 15px;
+}
+
+#show_score:hover{
+  /*color: #009999;
+  border: #009999;*/
+  opacity: 0;
+  
+  -webkit-transform: scale(2, 2);
+  -moz-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
